@@ -1,0 +1,84 @@
+/* ============ TABLETTES ============ */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .features h2,
+    .screenshots h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ============ MOBILES ============ */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .features-grid,
+    .download-grid,
+    .screenshots-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .install-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .install-actions .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+
+/* ============ PETITS MOBILES ============ */
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1.1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .main-nav a {
+        font-size: 0.9rem;
+    }
+}

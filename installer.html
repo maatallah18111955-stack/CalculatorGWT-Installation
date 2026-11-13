@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Web - CalculatorGWT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="assets/images/logo.png" alt="CalculatorGWT Logo" class="logo">
+                <span class="logo-text">CalculatorGWT</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="download.html">Téléchargement</a></li>
+                    <li><a href="installer.html" class="active">Installation Web</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="installer-page">
+        <div class="container">
+            <h1>Installation en ligne</h1>
+            <p class="installer-intro">
+                Installez CalculatorGWT directement depuis votre navigateur. Aucun fichier exécutable
+                à télécharger — l'application sera mise en cache pour fonctionner hors ligne.
+            </p>
+
+            <!-- Étapes -->
+            <div class="install-steps">
+                <div class="step" id="step-1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Préparation</h3>
+                        <p>Vérification de la compatibilité de votre navigateur.</p>
+                    </div>
+                </div>
+                <div class="step" id="step-2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Téléchargement des ressources</h3>
+                        <p>Mise en cache des fichiers HTML, JS et CSS compilés (WAR).</p>
+                    </div>
+                </div>
+                <div class="step" id="step-3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Activation</h3>
+                        <p>Finalisation de l'installation via <code>setup</code>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Barre de progression -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <p id="progress-text" class="progress-text">Prêt à installer.</p>
+
+            <!-- Bouton d'installation -->
+            <div class="install-actions">
+                <button id="btn-install" class="btn btn-primary">Installer maintenant</button>
+                <a id="btn-launch" href="web-app/war/CalculatorGWT.html" class="btn btn-secondary hidden" target="_blank">
+                    Lancer CalculatorGWT
+                </a>
+            </div>
+
+            <!-- Messages -->
+            <div id="install-message" class="install-message hidden"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CalculatorGWT. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/install.js"></script>
+</body>
+</html>
